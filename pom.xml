@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.0.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.adityabaravkar</groupId>
+	<artifactId>bagsofjasmine</artifactId>
+	<packaging>pom</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Bags of Jasmine</name>
+	<description>Bags of Jasmine Application</description>
+
+	<properties>
+		<node.version>v18.15.0</node.version>
+		<npm.version>9.5.0</npm.version>
+		<frontend-maven-plugin.version>1.12.1</frontend-maven-plugin.version>
+		<maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
+	</properties>
+
+	<modules>
+		<module>frontend</module>
+		<module>backend</module>
+	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>${maven-clean-plugin.version}</version>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>${project.basedir}/frontend/build</directory>
+						</fileset>
+						<fileset>
+							<directory>${project.basedir}/frontend/node_modules</directory>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
