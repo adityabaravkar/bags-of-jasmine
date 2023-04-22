@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="308" height="48" viewBox="0 0 308 48">
+  <defs>
+    <filter id="Bags_of_Jasmine" x="0" y="0" width="308" height="48" filterUnits="userSpaceOnUse">
+      <feOffset dy="-10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.396" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <text id="Bags_of_Jasmine-2" data-name="Bags of Jasmine" transform="translate(0 39)" fill="#fff" font-size="40" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Bags of Jasmine</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Bags_of_Jasmine)">
+      <text id="Bags_of_Jasmine-3" data-name="Bags of Jasmine" transform="translate(0 39)" fill="#fff" font-size="40" font-family="HelveticaNeue-Medium, Helvetica Neue" font-weight="500"><tspan x="0" y="0">Bags of Jasmine</tspan></text>
+    </g>
+  </g>
+</svg>

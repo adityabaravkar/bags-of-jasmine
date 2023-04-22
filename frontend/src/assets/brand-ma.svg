@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="263" height="56" viewBox="0 0 263 56">
+  <defs>
+    <filter id="बॅग्स_ऑफ_जस्मिन" x="0" y="0" width="263" height="56" filterUnits="userSpaceOnUse">
+      <feOffset dy="-10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.396" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <text id="बॅग्स_ऑफ_जस्मिन-2" data-name="बॅग्स ऑफ जस्मिन" transform="translate(1 42)" fill="#fff" font-size="40" font-family="KohinoorDevanagari-Medium, Kohinoor Devanagari" font-weight="500"><tspan x="0" y="0">बॅग्स</tspan><tspan y="0" font-family="HelveticaNeue-Medium, Helvetica Neue"> </tspan><tspan y="0">ऑफ</tspan><tspan y="0" font-family="HelveticaNeue-Medium, Helvetica Neue"> </tspan><tspan y="0">जस्मिन</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#बॅग्स_ऑफ_जस्मिन)">
+      <text id="बॅग्स_ऑफ_जस्मिन-3" data-name="बॅग्स ऑफ जस्मिन" transform="translate(1 42)" fill="#fff" font-size="40" font-family="KohinoorDevanagari-Medium, Kohinoor Devanagari" font-weight="500"><tspan x="0" y="0">बॅग्स</tspan><tspan y="0" font-family="HelveticaNeue-Medium, Helvetica Neue"> </tspan><tspan y="0">ऑफ</tspan><tspan y="0" font-family="HelveticaNeue-Medium, Helvetica Neue"> </tspan><tspan y="0">जस्मिन</tspan></text>
+    </g>
+  </g>
+</svg>
