@@ -1,0 +1,12 @@
+{
+  "greeting": "Hi User!",
+  "home": "Home",
+  "login": "Login",
+  "language": "Language",
+  "english": "English",
+  "marathi": "Marathi",
+  "enter-search-term": "Enter search term",
+  "search": "Search",
+  "book": "Book",
+  "quantity-left": "Only {{quantity}} left!"
+}

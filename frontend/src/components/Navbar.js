@@ -1,6 +1,13 @@
-import { ReactComponent as Payment } from "../assets/payment-en.svg";
+import { useTranslation } from "react-i18next";
+import Payment from "./Payment";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+
+  const handleChangeLanguage = (e) => {
+    i18n.changeLanguage(e.target.value);
+  };
+
   return (
     <nav className="navbar navbar-expand-lg w-100">
       <div className="container-fluid">
@@ -24,7 +31,7 @@ const Navbar = () => {
         >
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-              Hi User!
+              {t("greeting")}
             </h5>
             <button
               type="button"
@@ -34,33 +41,33 @@ const Navbar = () => {
             ></button>
           </div>
           <div className="offcanvas-body">
-            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul className="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
               <li className="nav-item">
                 <div
                   role="button"
                   className="nav-link active"
                   aria-current="page"
                 >
-                  Home
+                  {t("home")}
                 </div>
               </li>
               <li className="nav-item">
                 <div role="button" className="nav-link">
-                  Login
+                  {t("login")}
                 </div>
               </li>
               <li className="nav-item">
-                <form>
-                  <div className="form-group d-flex justify-content-center">
-                    <label className="control-label nav-link">
-                      Language
-                      <select className="form-select ms-3 w-50">
-                        <option value="en" selected>
-                          English
-                        </option>
-                        <option value="ma">Marathi</option>
-                      </select>
-                    </label>
+                <form className="nav-link ms-2 p-0">
+                  <div className="input-group">
+                    <span className="input-group-text">{t("language")}</span>
+                    <select
+                      value={i18n.language}
+                      onChange={handleChangeLanguage}
+                      className="form-select"
+                    >
+                      <option value="en">{t("english")}</option>
+                      <option value="ma">{t("marathi")}</option>
+                    </select>
                   </div>
                 </form>
               </li>
@@ -69,11 +76,11 @@ const Navbar = () => {
               <input
                 className="form-control me-2"
                 type="search"
-                placeholder="Enter search term"
+                placeholder={t("enter-search-term")}
                 aria-label="Search"
               />
               <button className="btn btn-primary" type="submit">
-                Search
+                {t("search")}
               </button>
             </form>
           </div>

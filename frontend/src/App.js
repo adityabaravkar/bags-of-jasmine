@@ -1,9 +1,7 @@
-import { Content, Navbar } from "./components";
+import { Content, Navbar, Brand } from "./components";
 import "./App.css";
 
-import { ReactComponent as Brand } from "./assets/brand-en.svg";
-
-function App() {
+const App = () => {
   return (
     <div className="app">
       <header className="app-header">
@@ -13,6 +11,6 @@ function App() {
       <Content />
     </div>
   );
-}
+};
 
 export default App;

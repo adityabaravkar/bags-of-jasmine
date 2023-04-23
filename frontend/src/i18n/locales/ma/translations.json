@@ -1,0 +1,12 @@
+{
+  "greeting": "नमस्ते!",
+  "home": "होम",
+  "login": "लॉगिन",
+  "language": "भाषा",
+  "english": "इंग्रजी",
+  "marathi": "मराठी",
+  "enter-search-term": "शोधण्यासाठी शब्द लिहा",
+  "search": "सर्च",
+  "book": "बुक",
+  "quantity-left": "फक्त {{quantity}} बाकी!"
+}
